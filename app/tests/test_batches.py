@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 
-from app.models.batch import Batch, OrderLine
+from app.domain.batch import Batch, OrderLine
 
 
 def make_batch_and_line(sku, batch_qty, line_qty):

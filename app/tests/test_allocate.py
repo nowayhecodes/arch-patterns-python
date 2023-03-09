@@ -1,7 +1,7 @@
 from datetime import date, timedelta
 
 import pytest
-from app.models.batch import Batch, OutOfStock, allocate, OrderLine
+from app.domain.batch import Batch, OutOfStock, allocate, OrderLine
 
 
 today = date.today()
