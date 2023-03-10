@@ -3,14 +3,14 @@ from datetime import date
 from typing import List, NamedTuple, Optional
 
 
-@dataclass(frozen=True)
+@dataclass(unsafe_hash=True)
 class OrderLine:
-    order_id: str
+    orderid: str
     sku: str
     qty: int
 
 
-@dataclass(frozen=True)
+@dataclass()
 class Name:
     first_name: str
     surname: str
